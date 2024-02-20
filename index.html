@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ریمیت</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        @font-face {
+            font-family: "Vazirmatn";
+            src:
+            local("Vazirmatn"),/*  از سیستم کاربر چک کن */
+            url("Vazirmatn-Light.woff2") , format("woff2");
+            font-weight: Light;
+        } 
+        a {
+            font-family: 'Vazirmatn';
+            font-size: 10pt;
+        }
+  
+        .topcontaner{
+            background-color: blueviolet;
+            width: 100vw;
+            height: 800px;
+            display: flex;
+            overflow: hidden;
+
+        }
+        .navigation{
+            width: 83%;
+            height: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            display: flex;
+        }
+        .navigation nav{
+            padding-top: 25px;
+        }
+
+
+        /* ================== */
+
+        .navigation-right{
+            width: 15%;
+            height: 40px;
+            display: flex;
+            flex-direction: row ;
+            align-items:center;
+            justify-content: space-around;
+        }
+
+        .sign-in {
+            /* background-color: rgb(216, 92, 43); */
+            background: radial-gradient( rgb(247, 112, 59) , rgb(206, 86, 39));
+            display: flex;
+            width: 85px;
+            height: 40px;
+            align-items: center;
+            padding-left: 20px ;
+            color: white;
+            font-family: 'Vazirmatn';
+            font-size: 15px;
+            border-radius: 20px 20px;
+            border: none;
+            box-shadow: 0px 5px 10px 0px rgba(216, 92, 43 , 0.5);
+        }
+
+        .sign-in:hover {
+            background: radial-gradient( rgb(247, 125, 77) , rgb(230, 101, 50));
+        }
+        .log-in {
+            display: flex;
+            width: 60px;
+            height: 40px;
+            align-items: center;
+            padding-left: 15px ;
+            color: white;
+            font-family: 'Vazirmatn';
+            font-size: 15px;
+            border-radius: 20px 20px;
+            border: none;
+            background-color: transparent;
+
+        }
+        .log-in:hover {
+            background-color:rgba(255, 255, 255, 0.5);
+
+        }
+
+        /* ================== */
+
+        .navigation-left{
+            width: 70%;
+            height: 40px;
+            margin: auto;
+            display: flex;
+            direction: rtl;
+            justify-content: start;
+            align-items: center;
+            margin-right: 12px;
+        }
+
+        .lives{
+            background-color: rgb(240, 9, 9);
+            display: flex;
+            width: 80px;
+            height: 28px;
+            align-items: center;
+            white-space: nowrap;
+            color: white;
+            font-family: 'Vazirmatn';
+            font-size: 12px;
+            font-weight: bold;
+            direction: ltr !important;
+            border: 1px solid rgb(240, 9, 9);
+            border-radius: 5px 5px;
+        }
+        .lives:hover{
+            background-color:transparent;
+            color: rgb(240, 9, 9);
+        }
+        .pl-10{
+            padding-left: 10px;
+        }
+        .pl-15{
+            padding-left: 15px;
+        }
+        .pr-12{
+            padding-right: 12px;
+        }
+        .menu{
+            padding-right: 12px;
+            opacity: 0.5;
+            text-decoration: none;
+            color: white;
+        }
+        .menu:hover{
+            opacity: 1;
+        }
+        .navigation-left a:nth-child(3){
+            opacity: 1;
+        }
+
+        .cercl{
+            width: 800px;
+            height: 800px;
+            position: absolute;
+            top: -380px;
+            right: -420px;
+            border-radius: 50%;
+            border: 2px dotted rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topcontaner">
+
+        <nav class="navigation">
+            <nav class="navigation-right">
+                <button class="log-in">ورود</button>
+                <button class="sign-in">عضویت</button>
+            </nav>
+            <nav class="navigation-left">
+                <span class="logo pl-15"><img src="https://reymit.ir/assets/svg/logo2.svg" width="160px" alt="logo"></span>
+                <button class="lives pl-15 pr-12">• 66 LIVES</button>
+                <a href="" class="pl-15 menu">صفحه اصلی</a>
+                <a href="" class="pl-15 menu">ریمیت ساب</a>
+                <a href="" class="pl-15 menu">تعرفه ها</a>
+                <a href="" class="pl-15 menu">خدمات</a>
+                <a href="" class="pl-15 menu">پشتیبانی</a>
+                <a href="" class="menu">بلاگ</a>
+            </nav>
+        </nav>
+        <div class="cercl"></div>
+    </div>
+
+    
+</body>
+</html>

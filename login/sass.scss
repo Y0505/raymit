@@ -1,0 +1,162 @@
+$background_color : rgba(112, 63, 196);
+$color-light: #F4F4FC;
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Vazirmatn';
+}
+@font-face {
+    font-family: "Vazirmatn";
+    src:
+    local("Vazirmatn"),/*  از سیستم کاربر چک کن */
+    url("Vazirmatn-Light.woff2") , format("woff2");
+    font-weight: Light;
+}
+.left{
+    width: 66.7vw;
+    height: 100vh;
+
+    .top-div{
+        height: 100px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding-right: 6%;
+        .top-nav{
+            a{
+                padding-left: 31px;
+                text-decoration: none;
+                color: $background_color;
+                font-size: 10pt;
+                opacity: 0.7;
+            }
+        }
+    }
+    .div-main{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-size: 32pt;
+            font-weight: bold;
+            color: $background_color;
+            margin-bottom: 5%;
+        }
+        .form{
+            width: 50vw;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            direction: rtl;
+            div{
+                label{
+                    display: block;
+                    font-size: 11pt;
+                    margin: 3% 0;
+                }
+                input{
+                    border: none;
+                    background-color: $color-light;
+                    border-radius: 30px;
+                    width: 23vw;
+                    height: 6vh;
+                }
+                button{
+                    border: none;
+                    border-radius: 30px;
+                    width: 23vw;
+                    height: 6vh;
+                    margin: 5% 0%;
+                    box-shadow: 0 18px 46px rgba(255, 113, 68, 0.4);
+                    background-image: linear-gradient(160deg, #FF7144 0%, #C15531 100%);
+                    font-family: 'Vazirmatn';
+                    color: white;
+                    font-size: 14pt;
+                    font-weight: bold;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    padding: 3.5% 4%;
+                    font-size: 13pt;
+                    display: flex;
+                    width: 9vw;
+                    border-radius: 30px;
+                    box-shadow: 0 18px 46px rgba(112, 63, 196, 0.4);
+                    background-image: linear-gradient(160deg, #703FC4 0%, #583398 100%);
+                }
+                img{
+                    padding-top: 4%;
+                    padding-left: 5%;
+                }
+            }
+            .invite{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+        ul{
+            margin-top: 6%;
+            text-align: center;
+            font-size: 11pt;
+            li{
+                display: block;
+                margin-top: 2.5%;
+                color: #b39ddb;
+                a{
+                    color: #8b84c5;
+                    // color: whitesmoke;
+                }
+            }
+        }
+    }
+}
+.right{
+    position: fixed;
+    background-color: $background_color;
+    width: 33.3vw;
+    height: 100vh;
+    right: 0px;
+    top: 0px;
+    .img-div{
+        display: flex;
+        height: 15.5vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .bottom-div{
+        position: absolute;
+        bottom: 1%;
+        left: 36%;
+        display: flex;
+        text-align: center;
+        .down-div{
+            a{
+                img{
+                    margin-bottom: 4%;
+                }
+            }
+            p{
+                color: white;
+                direction: rtl;
+                font-size: 9pt;
+                margin: 0px;
+            }
+            ul{
+                margin-right: 15%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li{
+                    display: inline;
+                    padding: 8% 15%;
+                }
+            }
+        }
+    }
+    
+}
